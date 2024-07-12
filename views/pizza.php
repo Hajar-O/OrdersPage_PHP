@@ -39,7 +39,9 @@ class Pizza {
 
         $this-> ingredient3 = $ingredient3;
 
+// création d'une nouvelle instance DATETIME.
         $this-> orderedAt = new DATETIME("NOW"); 
+
 // Je détermine le prix en fonction de la taille.
             if($this -> size === "s"){
                 $this -> price = 8;
@@ -70,7 +72,7 @@ class Pizza {
     }
     
 };
-
+// création d'une nouvelle instance.
 $norgevienne = new pizza ("m","creme", "saumon", "roquete", "aneth");
 $norgevienne -> pay();
 
