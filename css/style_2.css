@@ -1,0 +1,46 @@
+.formAdmin{
+    width: 35%;
+   position: fixed;
+   top: 28%;
+   left: 28%;
+    background-color: rgb(187, 158, 120);
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px rgb(124, 71, 36) solid;
+    box-shadow: 10px 5px 5px rgb(148, 145, 145);
+}
+.connexion{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+input{
+    all: unset;
+    width: 70%;
+    height: 30px;
+    background-color: rgb(222, 214, 203);
+    border-radius: 25px;
+    border:  solide red 6px;
+    margin: 20px;
+}
+
+button{
+    all:unset;
+    width: 50%;
+    margin: auto;
+    border-radius: 6px;
+    background-color: rgb(71, 29, 22);
+    border: none;
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
+button:hover{
+    background-color: rgb(225, 188, 143);
+    color: rgb(71, 29, 22);
+}
