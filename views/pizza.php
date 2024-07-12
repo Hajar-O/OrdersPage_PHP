@@ -70,10 +70,29 @@ class Pizza {
             $this -> status = "livré";
         }
     }
+    // Je génère des getters pour faire apparaitres les propriétés privées dans le HTML.
+    public function getSize(){
+        return 'Taille : ' .$this -> size;
+    }
+
+    public function getBase(){
+        return 'Base : ' . $this->base;
+    }
+
+    public function getIngredients(){
+        return'Ingrédients: ' . $this->ingredient . ', ' . $this->ingredient2 . ', ' . $this->ingredient3;
+    }
+    public function getPrice(){
+        return 'Price : ' . $this->price;
+    }
     
 };
 // création d'une nouvelle instance.
 $norgevienne = new pizza ("m","creme", "saumon", "roquete", "aneth");
 $norgevienne -> pay();
 
-var_dump($norgevienne);
+
+echo $norgevienne -> getSize() . '<br>';
+echo $norgevienne-> getBase() . '<br>';
+echo $norgevienne -> getIngredients() . '<br>';
+echo $norgevienne -> getPrice() . '€' . '<br>';
