@@ -10,7 +10,8 @@
 <main>
 <h1>Hotdog</h1>
 
-    <?php
+
+<?php
 
     require_once("../meal.php");
 
@@ -45,19 +46,14 @@ class Hotdog extends Meal {
             }
     }
 // méthode pay() qui permet de passer la pizza en status "payé" uniquement si le statut actuel est "en cours"
-    public function pay (){
-        if($this->status === "en cours de commande"){
+    // public function pay (){
+    //     if($this->status === "en cours de commande"){
 
-            $this -> status = "payé";
-        }
-    }
+    //         $this -> status = "payé";
+    //     }
+    // }
 // méthode ship() qui permet de passer la pizza en status "livré" uniquement si le status actuel est "payé
-    public function ship(){
-        if($this -> status === "payé"){
-
-            $this -> status = "livré";
-        }
-    }
+    
     // Je génère des getters pour faire apparaitres les propriétés privées dans le HTML.
     public function getSize(){
         return 'Taille : ' .$this -> size;
