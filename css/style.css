@@ -182,6 +182,16 @@ select:hover{
     line-height: 30px;
     box-shadow: 7px 5px 5px rgb(100, 96, 96);   
 }
+
+.orderPizza{
+    flex-direction: column;
+    background-color: rgb(153, 141, 125);
+    border-radius: 13px;
+    box-shadow: 7px 5px 5px rgb(100, 96, 96);
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
                     /* ---------------------CONNEXION------------------- */
 
 
