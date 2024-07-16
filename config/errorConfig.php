@@ -19,7 +19,7 @@ try {
 	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     // echo "<p>". "Vous êtes bien connecté à la base de donnée.". "</p>";
 
-// catch : si la connexion n'a pas abouti, envoie le massage d'erreur.
+// catch : si la connexion n'a pas abouti, on récupère l'erreur et envoie le massage d'erreur.
 } catch (PDOException $e) {
     echo "Erreur de connexion : " . $e->getMessage();
 }

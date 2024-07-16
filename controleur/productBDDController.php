@@ -9,6 +9,7 @@ $stmt = $pdo->prepare($sql);
 $titre = "Exemple de titre";
 $sous_titre = "Exemple de sous-titre";
 $description = "Ceci est une description d'exemple pour le produit.";
+
 // on remplace les paramètres par les vraies valeurs:
 $stmt->bindParam(':titre', $titre);
 $stmt->bindParam(':sous_titre', $sous_titre);
